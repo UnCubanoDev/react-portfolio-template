@@ -144,7 +144,7 @@ sudo apt-get install nginx
 2. Crea un archivo de configuración para tu sitio en `/etc/nginx/sites-available/`:
 
 ```bash
-sudo nano /etc/nginx/sites-available/tu_dominio
+sudo nano /etc/nginx/sites-available/uncubano.dev
 ```
 
 3. Agrega la siguiente configuración:
@@ -152,7 +152,7 @@ sudo nano /etc/nginx/sites-available/tu_dominio
 ```nginx
 server {
     listen 80;
-    server_name tu_dominio;
+    server_name uncubano.dev;
 
     location / {
         proxy_pass http://localhost:3000;
@@ -168,7 +168,7 @@ server {
 4. Crea un enlace simbólico para habilitar el sitio:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/tu_dominio /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/uncubano.dev /etc/nginx/sites-enabled/
 ```
 
 5. Reinicia Nginx:
