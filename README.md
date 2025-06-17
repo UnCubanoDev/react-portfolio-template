@@ -99,7 +99,7 @@ npm install -g yarn
 Clona el repositorio en tu VPS:
 
 ```bash
-git clone https://github.com/UnCubanoDev/react-portfolio-template-main.git
+git clone https://github.com/UnCubanoDev/react-portfolio-template.git
 cd react-portfolio-template-main
 ```
 
